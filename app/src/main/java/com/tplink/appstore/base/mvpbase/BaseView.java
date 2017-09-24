@@ -1,4 +1,4 @@
-package com.tplink.appstore.mvp.view;
+package com.tplink.appstore.base.mvpbase;
 
 public interface BaseView {
 

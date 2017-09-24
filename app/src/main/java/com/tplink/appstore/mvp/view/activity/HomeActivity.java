@@ -1,4 +1,4 @@
-package com.tplink.appstore;
+package com.tplink.appstore.mvp.view.activity;
 
 
 import android.support.design.widget.TabLayout;
@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.widget.LinearLayout;
 
+import com.tplink.appstore.R;
 import com.tplink.appstore.adapter.FixPagerAdapter;
 import com.tplink.appstore.base.BaseActivity;
 import com.tplink.appstore.base.BaseFragment;
@@ -68,13 +69,13 @@ public class HomeActivity extends BaseActivity{
         mainViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                BaseFragment fragment = FragmentFactory.createFragment(position);
-                fragment.show();
+
             }
 
             @Override
             public void onPageSelected(int position) {
-
+                BaseFragment fragment = FragmentFactory.createFragment(position);
+                fragment.show();
             }
 
             @Override

@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tplink.appstore.mvp.view.BaseView;
+import com.tplink.appstore.base.mvpbase.BaseView;
 import com.tplink.appstore.view.LoadingPager;
 
 /**
@@ -17,6 +17,13 @@ import com.tplink.appstore.view.LoadingPager;
 public abstract class BaseFragment extends Fragment implements BaseView {
 
     private LoadingPager loadingPager;
+    protected BaseActivity mActivity;
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mActivity = (BaseActivity) getActivity();
+    }
 
     @Nullable
     @Override

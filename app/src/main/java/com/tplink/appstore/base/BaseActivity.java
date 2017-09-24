@@ -35,7 +35,6 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         initLayout();
         ButterKnife.bind(this);
-
         initView();
 
 
@@ -78,14 +77,25 @@ public abstract class BaseActivity extends AppCompatActivity {
         return 0;
     }
 
+    /**
+     * 初始化布局，需要子类自己实现
+     */
     protected abstract void initLayout();
 
+    /**初始化view，需要子类自己实现
+     *
+     */
     protected abstract void initView();
+
     /**
      * 初始化数据
      */
     protected void initData(){}
 
+    /**
+     * 所有Activity的动画都一样
+     * @param intent
+     */
     @Override
     public void startActivity(Intent intent) {
         super.startActivity(intent);

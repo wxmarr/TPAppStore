@@ -1,11 +1,11 @@
 package com.tplink.appstore.factory;
 
 import com.tplink.appstore.base.BaseFragment;
-import com.tplink.appstore.fragment.AppManagerFragment;
-import com.tplink.appstore.fragment.CategoryFragment;
-import com.tplink.appstore.fragment.MyFragment;
-import com.tplink.appstore.fragment.RecommendFragment;
-import com.tplink.appstore.fragment.TopFragment;
+import com.tplink.appstore.mvp.view.fragment.AppManagerFragment;
+import com.tplink.appstore.mvp.view.fragment.CategoryFragment;
+import com.tplink.appstore.mvp.view.fragment.MyFragment;
+import com.tplink.appstore.mvp.view.fragment.RecommendFragment;
+import com.tplink.appstore.mvp.view.fragment.TopFragment;
 
 import java.util.HashMap;
 import java.util.Map;

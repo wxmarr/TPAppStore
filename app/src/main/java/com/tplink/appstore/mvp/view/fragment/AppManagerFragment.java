@@ -1,4 +1,4 @@
-package com.tplink.appstore.fragment;
+package com.tplink.appstore.mvp.view.fragment;
 
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -16,13 +16,13 @@ import com.tplink.appstore.view.LoadingPager;
  * Created by wxmarr on 2017/8/21.
  */
 
-public class MyFragment extends BaseFragment {
+public class AppManagerFragment extends BaseFragment {
 
 
 
     @Override
     public View createSuccessView() {
-        View view = UIUtils.inflate(R.layout.fragment_my);
+        View view = UIUtils.inflate(R.layout.fragment_manager);
         return view;
     }
 
@@ -32,7 +32,7 @@ public class MyFragment extends BaseFragment {
             @Override
             public void run() {
                 SystemClock.sleep(2000);
-                setState(LoadingPager.LoadResult.error);
+                setState(LoadingPager.LoadResult.empty);
             }
         }).start();
     }
